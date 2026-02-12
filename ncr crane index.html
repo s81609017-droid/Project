@@ -1,0 +1,239 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Crane Service in Delhi | 24x7 Towing - Delhi NCR Crane Service</title>
+<meta name="description" content="24x7 Crane Service in Delhi NCR. Fast car towing, accident recovery & roadside assistance. Call 7011502346.">
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+<h2>DELHI NCR CRANE SERVICE</h2>
+<nav>
+<a href="index.html">Home</a>
+<a href="crane-service-delhi.html">Delhi</a>
+<a href="towing-service-noida.html">Noida</a>
+<a href="accident-recovery-gurgaon.html">Gurgaon</a>
+</nav>
+</header>
+
+<!-- HERO WITH PARALLAX -->
+<section class="hero">
+<div class="overlay"></div>
+<div class="hero-content">
+<h1>Premium 24x7 Crane Service</h1>
+<p>Fast Towing & Accident Recovery Across Delhi NCR</p>
+<a href="tel:+917011502346" class="btn">Call Now</a>
+</div>
+</section>
+
+<!-- ANIMATED COUNTERS -->
+<section class="section counters">
+<div class="counter-box">
+<h2 class="counter" data-target="5000">0</h2>
+<p>Vehicles Recovered</p>
+</div>
+
+<div class="counter-box">
+<h2 class="counter" data-target="3200">0</h2>
+<p>Happy Customers</p>
+</div>
+
+<div class="counter-box">
+<h2 class="counter" data-target="15">0</h2>
+<p>Crane Operators</p>
+</div>
+
+<div class="counter-box">
+<h2>24/7</h2>
+<p>Availability</p>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section class="section">
+<h2>Our Services</h2>
+<div class="services">
+<div class="card">Car Towing</div>
+<div class="card">Accident Recovery</div>
+<div class="card">Flatbed Transport</div>
+<div class="card">Roadside Assistance</div>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+<h2>Customer Reviews</h2>
+
+<div class="testimonial-slider">
+<div class="testimonial active">
+⭐⭐⭐⭐⭐ Best crane service in Delhi. Reached in 20 minutes.
+</div>
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐ Professional team & safe towing. Highly recommended.
+</div>
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐ Affordable towing service near me in NCR.
+</div>
+</div>
+
+</section>
+
+<footer>
+© 2026 Delhi NCR Crane Service | Call 7011502346
+</footer>
+
+<a href="https://wa.me/917011502346" class="whatsapp">WhatsApp</a>
+<a href="tel:+917011502346" class="callbtn">Call</a>
+
+<script src="script.js"></script>
+</body>
+</html><style>*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#0d0d0d;color:white;}
+
+header{
+position:fixed;
+width:100%;
+background:rgba(0,0,0,0.8);
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+nav a{
+color:white;
+margin:0 10px;
+text-decoration:none;
+}
+
+.hero{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1605559424843-9e4c228f0a77') center/cover fixed;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+position:relative;
+}
+
+.overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+}
+
+.hero-content{
+position:relative;
+z-index:1;
+}
+
+.btn{
+background:#ffcc00;
+padding:12px 30px;
+border-radius:50px;
+color:black;
+text-decoration:none;
+font-weight:bold;
+}
+
+.section{
+padding:120px 10%;
+text-align:center;
+}
+
+.services{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:30px;
+border-radius:15px;
+width:250px;
+}
+
+.counters{
+display:flex;
+justify-content:center;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.counter-box h2{
+font-size:50px;
+color:#ffcc00;
+}
+
+.testimonial{
+display:none;
+background:rgba(255,255,255,0.05);
+padding:30px;
+border-radius:15px;
+}
+
+.testimonial.active{
+display:block;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#000;
+}
+
+.whatsapp,.callbtn{
+position:fixed;
+bottom:20px;
+padding:15px 20px;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
+}
+
+.whatsapp{right:20px;background:#25D366;color:white;}
+.callbtn{left:20px;background:#ffcc00;color:black;}</style><script>// Animated Counters
+const counters = document.querySelectorAll(".counter");
+
+const startCounter = () => {
+counters.forEach(counter => {
+const updateCount = () => {
+const target = +counter.getAttribute("data-target");
+const count = +counter.innerText;
+const increment = target / 200;
+
+if(count < target){
+counter.innerText = Math.ceil(count + increment);
+setTimeout(updateCount, 20);
+} else {
+counter.innerText = target + "+";
+}
+};
+updateCount();
+});
+};
+
+window.addEventListener("scroll", startCounter, {once:true});
+
+// Testimonial Slider
+let index=0;
+const testimonials=document.querySelectorAll(".testimonial");
+
+setInterval(()=>{
+testimonials[index].classList.remove("active");
+index=(index+1)%testimonials.length;
+testimonials[index].classList.add("active");
+},4000);</script>
